@@ -1,4 +1,3 @@
-
 const getweather = () => {
     const API_KEY = `c74d943336d6ea00ba6892fa945ef33a`;
     const cityName = document.getElementById('city_name').value;
@@ -22,4 +21,6 @@ const displayTemperature = (temperature) => {
     const imgIcon = document.getElementById('icon');
     imgIcon.setAttribute('src', url)
 
+    // clear input field
+    document.getElementById('city_name').value = ''
 }
